@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+     <link href="C:\Users\wolfs\Desktop\Coding\Survey form\main.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+     <div id="container">
+         <div id="header">
+             <h1 id=title>
+                 Astronomy Course Survey
+             </h1>
+             <p id=description>
+                 What would you like to see from the class
+             </p>
+         </div>
+         <form id="survey-form" action="">
+             <div class="name-form">
+                 <label id="name-label" for="name">Name</label>
+                 <input type="text" class="form-type" id="name" placeholder="Name" required>
+             </div>
+             <div class="email-form">
+                 <label id="email-label" for="email">Email</label>
+                 <input type="email" class="form-type" id="email" placeholder="Email" required>
+             </div>
+             <div class="number-form">
+                 <label id="number-label" for="number">Age</label>
+                 <input type="number" class="form-type" id="number" min="12" max="99" placeholder="Age (optional)">
+             </div>
+             <div class="planet-form">
+                 <p> What's your favorite Planet?</p>
+                 <select id="dropdown" name="planet" class="form-type" required>
+                     <option value="" disabled="disabled">Select Favorite Planet</option>
+                     <option value="Mercury">Mercury</option>
+                     <option value="Venus">Venus</option>
+                     <option value="Mars">Mars</option>
+                     <option value="Earth">Earth</option>
+                     <option value="Jupiter">Jupiter</option>
+                     <option value="Saturn">Saturn</option>
+                     <option value="Neptune">Neptune</option>
+                     <option value="Uranus">Uranus</option>
+                 </select>
+             </div>
+             <div class="excursion-form">
+                 <p>Would you like to go on class excursions?</p>
+                 <label>
+                     <input name="user-join" value="yes" type="radio" class="excursion-radio" checked>
+                     Yes
+                 </label>
+                 <label>
+                     <input name="user-join" value="maybe" type="radio" class="excursion-radio">
+                     Maybe
+                 </label>
+                 <label>
+                     <input name="user-join" value="no" type="radio" class="excursion-radio">
+                     No
+                 </label>
+             </div>
+             <div class="learning-opportunities">
+                 <p> What learning opportunities would you like to see?</p>
+                 <label>
+                     <input name="learning" value="planetarium" type="checkbox" class="checkbox-form">
+                     Planetarium
+                 </label>
+                 <label>
+                     <input name="learning" value="space museum" type="checkbox" class="checkbox-form">
+                     Space Museum
+                 </label>
+                 <label>
+                     <input name="learning" value="camp" type="checkbox" class="checkbox-form">
+                     Camp Under Stars
+                 </label>
+                 <label>
+                     <input name="learning" value="rocket-launch" type="checkbox" class="checkbox-form">
+                     Rocket Launch
+                 </label>
+                 <label>
+                     <input name="learning" value="telescope" type="checkbox" class="checkbox-form">
+                     Nasa Telescope
+                 </label>
+             </div>
+             <div class="comments-form">
+                 <p>For any comments or suggestions</p>
+                 <textarea id="comments" class="form-type" name="comment" placeholder="Enter your comments here"></textarea>
+             </div>
+             <div class="submit-group">
+                 <button type="submit" id="submit" class="submit">
+                     Submit
+                 </button>
+             </div>
+         </form>
+     </div>
+
+
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+ </body>
+</html>
